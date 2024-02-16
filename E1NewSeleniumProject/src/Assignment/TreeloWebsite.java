@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 
@@ -30,6 +31,8 @@ public class TreeloWebsite {
 
 		driver.findElement(By.xpath("//div[@title='E1']")).click();
 		Thread.sleep(2000);
+		
+	
 
 		Actions act = new Actions(driver);
 
