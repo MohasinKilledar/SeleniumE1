@@ -19,12 +19,12 @@ public class ValidLoginTestCase {
 		
 		Flib flib = new Flib();
 		
-		String usnData = flib.readExcelData("./data/testData.xlsx", "validcreds", 1, 0);
-		String pwdData = flib.readExcelData("./data/testData.xlsx", "validcreds", 1, 1);
+		//String usnData = flib.readExcelData("./data/testData.xlsx", "validcreds", 1, 0);
+		//String pwdData = flib.readExcelData("./data/testData.xlsx", "validcreds", 1, 1);
 		
-		driver.findElement(By.name("username")).sendKeys(usnData);
+		driver.findElement(By.name("username")).sendKeys(flib.readExcelData("./data/testData.xlsx", "validcreds", 1, 0));
 		Thread.sleep(1000);
-		driver.findElement(By.name("pwd")).sendKeys(pwdData);
+		driver.findElement(By.name("pwd")).sendKeys(flib.readExcelData("./data/testData.xlsx", "validcreds", 1, 1));
 		Thread.sleep(1000);
 		driver.findElement(By.id("loginButton")).click();
 		Thread.sleep(1000);

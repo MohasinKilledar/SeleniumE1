@@ -1,9 +1,8 @@
 package Assignment;
 
 import java.time.Duration;
-import java.util.Date;
-
-import javax.swing.text.DateFormatter;
+import java.time.LocalDateTime;
+import java.util.NoSuchElementException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,21 +10,37 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class MakeMyTrip {
 
-	public static void main(String[] args) throws InterruptedException {
-		WebDriver driver = new ChromeDriver();
+	public static void main(String[] args) {
+		
+		LocalDateTime systemDate = LocalDateTime.now().plusMonths(7);
+		String monthName = systemDate.getMonth().name();
+		int year = systemDate.getYear();
+		int day = systemDate.getDayOfMonth();
+		
+		String monthYear = monthName+" "+year;
+		System.out.println(monthYear);
+		
+		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		driver.get("https://www.makemytrip.com/");
-	
-		System.
 		
-		driver.findElement(By.xpath("//label[@for='departure']")).click();
-		Thread.sleep(2000);
+		driver.findElement(By.xpath("//span[text()='Departure']")).click();
 		
-		driver.findElement(By.xpath("//div[@class='DayPicker-Month']/ancestor::div[@class='DayPicker-Months']/descendant::p[text()='25']")).click();
+		while(true)
+		{
+			String text = driver.findElement(By.xpath("(//div[@class='DayPicker-Caption'])[2]")).getText();
+			
+			if(text.equalsIgnoreCase(monthYear))
+			{
+				break;
+			}
+			else
+			{
+				driver.findElement(By.xpath("//span[@aria-label='Next Month']")).click();
+			}
+		}
 		
-		
-
+		driver.findElement(By.xpath("(//p[text()='"+day+"'])[2]")).click();
 	}
-
 }
