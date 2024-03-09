@@ -15,16 +15,22 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 public class Flib {
 
 	public String getDataFromProperty(String path, String key) throws IOException {
+
 		FileInputStream fis = new FileInputStream(path);
+
 		Properties prop = new Properties();
+
 		prop.load(fis);
+
 		String value = prop.getProperty(key);
+
 		return value;
 
 	}
 
 	public String getDataFromExcel(String excelPath, String sheetName, int rowNo, int cellNo)
 			throws EncryptedDocumentException, IOException {
+
 		FileInputStream fis = new FileInputStream(excelPath);
 
 		Workbook wb = WorkbookFactory.create(fis);
@@ -45,24 +51,36 @@ public class Flib {
 			throws EncryptedDocumentException, IOException {
 
 		FileInputStream fis = new FileInputStream(excelPath);
+
 		Workbook wb = WorkbookFactory.create(fis);
+
 		Sheet sheet = wb.getSheet(sheetname);
+
 		Row row = sheet.getRow(rowNo);
+
 		Cell cell = row.getCell(cellNo);
+
 		cell.setCellValue(data);
 
 		FileOutputStream fos = new FileOutputStream(excelPath);
+
 		wb.write(fos);
 
 	}
 
 	public int getRowCount(String excelPath, String sheetname) throws EncryptedDocumentException, IOException {
+
 		FileInputStream fis = new FileInputStream(excelPath);
+
 		Workbook wb = WorkbookFactory.create(fis);
+
 		Sheet sheet = wb.getSheet(sheetname);
+
 		int rc = sheet.getLastRowNum();
+
 		return rc;
 
 	}
 
+	
 }

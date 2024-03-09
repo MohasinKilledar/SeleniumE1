@@ -25,11 +25,12 @@ public class InvalidLoginTestCase extends BaseTest {
 
 		{
 
-			ln.invalidloginMethod(lib.getDataFromExcel(Excel_Path , sheetname, i, 0),lib.getDataFromExcel(Excel_Path, sheetname, rc, 1));
+			ln.invalidloginMethod(lib.getDataFromExcel(Excel_Path , sheetname, i, 0),lib.getDataFromExcel(Excel_Path, sheetname, i, 1));
 		}
 
 		test.tearDown();
 
+		
 	}
 
 }

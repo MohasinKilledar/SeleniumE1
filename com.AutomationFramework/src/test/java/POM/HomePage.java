@@ -16,8 +16,8 @@ public class HomePage {
 	@FindBy(xpath="//div[text()='Settings']/ following-sibling :: img") private WebElement settingsModule;
 	@FindBy(partialLinkText ="Logout") private WebElement logoutLink;
 	
-	//Intilization
 	
+	//Intilization
 	public HomePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
