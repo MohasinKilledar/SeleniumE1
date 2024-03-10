@@ -2,7 +2,9 @@ package POM;
 
 import java.util.Random;
 
-public class Worklib {
+import org.openqa.selenium.support.ui.Select;
+
+public class Worklib extends BaseTest{
 	
 	
 	public int randomNo()
@@ -14,5 +16,7 @@ public class Worklib {
 		
 		
 	}
+	
+	
 
 }
