@@ -10,7 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BaseTest implements IAuto {
 
-	WebDriver driver;
+	public static WebDriver driver;
 
 	public void setUp() throws IOException 
 	{
