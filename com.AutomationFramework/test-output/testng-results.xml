@@ -1,29 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-15T13:26:41Z" name="Suite" finished-at="2024-03-15T13:27:02Z" duration-ms="20301">
+  <suite started-at="2024-03-15T14:49:59Z" name="Default suite" finished-at="2024-03-15T14:50:40Z" duration-ms="41607">
     <groups>
-      <group name="Functional Test">
-        <method signature="demo2.demo()[pri:0, instance:TestNGExecution.demo2@4f3bbf68]" name="demo" class="TestNGExecution.demo2"/>
-      </group> <!-- Functional Test -->
-      <group name="Smoke Test">
-        <method signature="demo1.demo()[pri:0, instance:TestNGExecution.demo1@7164ca4c]" name="demo" class="TestNGExecution.demo1"/>
-      </group> <!-- Smoke Test -->
     </groups>
-    <test started-at="2024-03-15T13:26:41Z" name="Test" finished-at="2024-03-15T13:27:02Z" duration-ms="20301">
-      <class name="TestNGExecution.demo1">
-        <test-method signature="demo()[pri:0, instance:TestNGExecution.demo1@7164ca4c]" started-at="2024-03-15T13:26:41Z" name="demo" finished-at="2024-03-15T13:26:54Z" duration-ms="12509" status="PASS">
+    <test started-at="2024-03-15T14:49:59Z" name="Default test" finished-at="2024-03-15T14:50:40Z" duration-ms="41607">
+      <class name="LearnningTestNG.DataProviderByExcel">
+        <test-method signature="invalidLogin([Ljava.lang.String;)[pri:0, instance:LearnningTestNG.DataProviderByExcel@68df9280]" started-at="2024-03-15T14:50:00Z" name="invalidLogin" data-provider="invalidCreds" finished-at="2024-03-15T14:50:09Z" duration-ms="9546" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@52bf7bf6]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- demo -->
-      </class> <!-- TestNGExecution.demo1 -->
-      <class name="TestNGExecution.demo2">
-        <test-method signature="demo()[pri:0, instance:TestNGExecution.demo2@4f3bbf68]" started-at="2024-03-15T13:26:54Z" name="demo" finished-at="2024-03-15T13:27:02Z" duration-ms="7771" status="PASS">
+        </test-method> <!-- invalidLogin -->
+        <test-method signature="invalidLogin([Ljava.lang.String;)[pri:0, instance:LearnningTestNG.DataProviderByExcel@68df9280]" started-at="2024-03-15T14:50:09Z" name="invalidLogin" data-provider="invalidCreds" finished-at="2024-03-15T14:50:17Z" duration-ms="7919" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@261db982]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- demo -->
-      </class> <!-- TestNGExecution.demo2 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- invalidLogin -->
+        <test-method signature="invalidLogin([Ljava.lang.String;)[pri:0, instance:LearnningTestNG.DataProviderByExcel@68df9280]" started-at="2024-03-15T14:50:17Z" name="invalidLogin" data-provider="invalidCreds" finished-at="2024-03-15T14:50:25Z" duration-ms="7838" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@ae73c80]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method signature="invalidLogin([Ljava.lang.String;)[pri:0, instance:LearnningTestNG.DataProviderByExcel@68df9280]" started-at="2024-03-15T14:50:25Z" name="invalidLogin" data-provider="invalidCreds" finished-at="2024-03-15T14:50:33Z" duration-ms="7946" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@22f4f8f2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method signature="invalidLogin([Ljava.lang.String;)[pri:0, instance:LearnningTestNG.DataProviderByExcel@68df9280]" started-at="2024-03-15T14:50:33Z" name="invalidLogin" data-provider="invalidCreds" finished-at="2024-03-15T14:50:40Z" duration-ms="7701" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@bbd4791]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+      </class> <!-- LearnningTestNG.DataProviderByExcel -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
