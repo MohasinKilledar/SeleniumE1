@@ -1,4 +1,3 @@
-
 Feature: Application Login
 
 
@@ -12,7 +11,7 @@ Feature: Application Login
 
 Scenario: user page default login
     Given user is landing on ActiTime Login page
-    When user login into application with username "king" and password "kohli@123"
+    When user login into application with username king and password kohli@12.3
     Then Home page is displayed
     
     
@@ -29,5 +28,15 @@ Scenario Outline: Invalid login credentials
     | debit | hello@123 |
     | credit | pass@123 |
 
+
+Scenario: user page default signup
+    Given user is on Practice landing page
+    When user signup into application
+    | Mohasin |
+    | Killedar |
+    | contact@gmail.com|
+    |9876543210|
+    Then Home page is displayed
+    
    
 
