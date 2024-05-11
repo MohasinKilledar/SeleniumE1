@@ -26,11 +26,12 @@ public class DeselectAll_Method {
 
 		}
 		// To deselect all the option from the dropdown using for loop
-		for (int j = 0; j <= 5; j++) {
-			option.deselectByIndex(j);
-			Thread.sleep(2000);
+		//for (int j = 0; j <= 5; j++) {
+			//option.deselectByIndex(j);
+			//Thread.sleep(2000);
 
-		}
+		//}
+		option.deselectAll();
 	}
 
 }

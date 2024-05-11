@@ -12,7 +12,7 @@ public class FindElementsMethod {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://www.google.co.in/");//To launch actiTime
+		driver.get("https://www.google.co.in/");//To launch Google
 		Thread.sleep(2000);
 		
 		WebElement activeEle = driver.switchTo().activeElement();

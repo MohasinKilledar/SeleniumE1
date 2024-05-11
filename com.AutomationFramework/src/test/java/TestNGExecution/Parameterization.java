@@ -22,7 +22,7 @@ public class Parameterization {
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-			driver.get("http://127.0.0.1/login.do");
+			driver.get(url);
 			Thread.sleep(1000);
 
 			driver.findElement(By.name("username")).sendKeys(usn);
@@ -35,7 +35,7 @@ public class Parameterization {
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-			driver.get("http://127.0.0.1/login.do");
+			driver.get(url);
 			Thread.sleep(1000);
 
 			driver.findElement(By.name("username")).sendKeys(usn);
@@ -44,7 +44,25 @@ public class Parameterization {
 			Thread.sleep(1000);
 			driver.findElement(By.id("loginButton")).click();
 
+		}else if(bname.equalsIgnoreCase("edge"))
+		{
+			driver= new EdgeDriver();
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			driver.get(url);
+			Thread.sleep(1000);
+			
+			driver.findElement(By.name("username")).sendKeys(usn);
+			Thread.sleep(1000);
+			driver.findElement(By.name("pwd")).sendKeys(pwd);
+			Thread.sleep(1000);
+			driver.findElement(By.id("loginButton")).click();
+			
+			
+			
+			
 		}
+		
 
 		
 

@@ -18,6 +18,7 @@ public class getAttribute_Method {
 		WebElement pwd = driver.findElement(By.name("pwd"));
 		String attributeValue = pwd.getAttribute("type");
 		System.out.println(attributeValue);
+		
 
 	}
 

@@ -27,7 +27,7 @@ public class Selction_MethodDD {
 		sel.selectByVisibleText("Coffee");// By using Text of dropdown
 		Thread.sleep(2000);
 		
-		driver.close();
+		//driver.close();
 
 	}
 

@@ -11,14 +11,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Authentication_Popup {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 	WebDriver driver=new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 	driver.get("https://shoppersstack.com/");
+	Thread.sleep(2000);	
 	
-	
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	WebElement swagger = driver.findElement(By.xpath("//a[text()='Swagger documentation']"));
 	wait.until(ExpectedConditions.elementToBeClickable(swagger));
 	swagger.click();

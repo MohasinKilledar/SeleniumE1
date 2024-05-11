@@ -26,6 +26,7 @@ public class ActiTimeHardAssert {
 		WebElement usn = driver.findElement(By.name("username"));
 		Assert.assertEquals(usn.isDisplayed(), true, "Username TextBox is not dispalyed");
 		usn.sendKeys("admin");
+		
 
 		WebElement pwd = driver.findElement(By.name("pwd"));
 		Assert.assertEquals(pwd.isDisplayed(), true, "Password Textbox is not displayed");

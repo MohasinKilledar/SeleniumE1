@@ -28,6 +28,8 @@ public class ExplicitWait {
 		WebElement checkButton = driver.findElement(By.xpath("//button[@id='Check']"));
 		wait.until(ExpectedConditions.elementToBeClickable(checkButton));
 		checkButton.click();
+		
+	
 	}
 
 }

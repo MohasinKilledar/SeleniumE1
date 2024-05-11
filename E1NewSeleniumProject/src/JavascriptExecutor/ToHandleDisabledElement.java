@@ -29,6 +29,7 @@ public class ToHandleDisabledElement {
 		JavascriptExecutor js = (JavascriptExecutor)driver;// To typecasting into javascript
 		
 		//To pass input to Disabled Element
+		//js.executeScript("arguments[0].value='VIRAT'",disabledTextBox );
 		js.executeScript("document.getElementById('name').value='admin'");
 		Thread.sleep(3000);
 		

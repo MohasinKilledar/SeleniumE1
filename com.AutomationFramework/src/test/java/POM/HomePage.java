@@ -7,19 +7,24 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
 
-	//Decleration 
-	@FindBy(xpath="//div[text()='Time-Track']/ancestor::a/descendant :: img") private WebElement timeTrackModule;
-	@FindBy(xpath="//div[text()='Tasks']/../descendant :: img") private WebElement tasksModule;
-	@FindBy(xpath="//div[text()='Reports']/ following-sibling :: img") private WebElement reportsModule ;
-	@FindBy(xpath ="//div[text()='Users']/ following-sibling :: img")private WebElement usersModule;
-	@FindBy(xpath="//div[text()='Work Schedule']/ following-sibling :: img") private WebElement workScheduleModule;
-	@FindBy(xpath="//div[text()='Settings']/ following-sibling :: img") private WebElement settingsModule;
-	@FindBy(partialLinkText ="Logout") private WebElement logoutLink;
-	
-	
-	//Intilization
-	public HomePage(WebDriver driver)
-	{
+	// Decleration
+	@FindBy(xpath = "//div[text()='Time-Track']/ancestor::a/descendant :: img")
+	private WebElement timeTrackModule;
+	@FindBy(xpath = "//div[text()='Tasks']/../descendant :: img")
+	private WebElement tasksModule;
+	@FindBy(xpath = "//div[text()='Reports']/ following-sibling :: img")
+	private WebElement reportsModule;
+	@FindBy(xpath = "//div[text()='Users']/ following-sibling :: img")
+	private WebElement usersModule;
+	@FindBy(xpath = "//div[text()='Work Schedule']/ following-sibling :: img")
+	private WebElement workScheduleModule;
+	@FindBy(xpath = "//div[text()='Settings']/ following-sibling :: img")
+	private WebElement settingsModule;
+	@FindBy(partialLinkText = "Logout")
+	private WebElement logoutLink;
+
+	// Intilization
+	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 
@@ -50,8 +55,5 @@ public class HomePage {
 	public WebElement getLogoutLink() {
 		return logoutLink;
 	}
-	
-	
+
 }
-
-

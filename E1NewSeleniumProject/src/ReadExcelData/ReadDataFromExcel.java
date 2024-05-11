@@ -14,8 +14,7 @@ public class ReadDataFromExcel {
 
 	public static void main(String[] args) throws EncryptedDocumentException, IOException {
 		
-		// To Specify the path of the e
-		FileInputStream fis = new FileInputStream("./data/testData.xlsx");
+		FileInputStream fis = new FileInputStream("./data/testData.xlsx");// To provide the path of the excel file
 		
 		// To make the file ready to read
 		Workbook wb = WorkbookFactory.create(fis);

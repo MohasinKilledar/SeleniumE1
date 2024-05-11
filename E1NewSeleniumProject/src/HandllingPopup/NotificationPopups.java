@@ -17,11 +17,6 @@ public class NotificationPopups {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		driver.get("https://www.easemytrip.com/");
 		
-		
-		
-		
-		
-		
 
 	}
 

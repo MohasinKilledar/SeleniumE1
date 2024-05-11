@@ -9,13 +9,40 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">36,943</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test1</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">1</td><td class="num">35,753</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Test_Package.CreateNewCustomerAndProject</td><td><a href="#m0">createNewCustomerAndProject_TC</a></td><td rowspan="1">1711256333264</td><td rowspan="1">12182</td></tr><tr class="passedodd"><td rowspan="1">Test_Package.CreateUserManager</td><td><a href="#m1">createUserManager</a></td><td rowspan="1">1711256322418</td><td rowspan="1">9113</td></tr><tr class="passedeven"><td rowspan="1">Test_Package.InvalidLoginTestCase</td><td><a href="#m2">invalidLogin_TC</a></td><td rowspan="1">1711256312450</td><td rowspan="1">2316</td></tr><tr class="passedodd"><td rowspan="1">Test_Package.ValidtestCase</td><td><a href="#m3">validLogin_TC</a></td><td rowspan="1">1711256316423</td><td rowspan="1">4316</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Test_Package.InvalidLoginTestCase</td><td><a href="#m0">invalidLogin_TC</a></td><td rowspan="1">1712643766117</td><td rowspan="1">1049</td></tr><tr><th colspan="4">Test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Test_Package.CreateNewCustomerAndProject</td><td><a href="#m1">createNewCustomerAndProject_TC</a></td><td rowspan="1">1712643780169</td><td rowspan="1">12422</td></tr><tr class="passedodd"><td rowspan="1">Test_Package.CreateUserManager</td><td><a href="#m2">createUserManager</a></td><td rowspan="1">1712643769059</td><td rowspan="1">9179</td></tr><tr class="passedeven"><td rowspan="1">Test_Package.ValidtestCase</td><td><a href="#m3">validLogin_TC</a></td><td rowspan="1">1712643794477</td><td rowspan="1">4319</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">Test_Package.CreateNewCustomerAndProject#createNewCustomerAndProject_TC</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Test_Package.CreateUserManager#createUserManager</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Test_Package.InvalidLoginTestCase#invalidLogin_TC</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test1</h2><h3 id="m0">Test_Package.InvalidLoginTestCase#invalidLogin_TC</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">This Method is Failed and taken screenshot :invalidLogin_TC</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=123.0.6312.106)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.16.0&apos;, revision: &apos;15400459dd*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [efbbc4557d1b51c147e8a04882f7a0ac, clickElement {id=f.2116DD4172536D6A1532935360934488.d.553B55C5E19E8AF2EEA77254DE7492C4.e.31}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: C:\Users\karis\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58459}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58459/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (efbbc4557d1b51c147e8a04882f7a0ac)] -&gt; id: loginButton]
+Session ID: efbbc4557d1b51c147e8a04882f7a0ac
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at Page_Package.LoginPage.invalidloginMethod(LoginPage.java:65)
+	at Test_Package.InvalidLoginTestCase.invalidLogin_TC(InvalidLoginTestCase.java:37)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Test_Package.CreateNewCustomerAndProject#createNewCustomerAndProject_TC</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Test_Package.CreateUserManager#createUserManager</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">Test_Package.ValidtestCase#validLogin_TC</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

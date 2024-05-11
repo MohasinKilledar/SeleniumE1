@@ -26,6 +26,7 @@ public class ActiTimeSoftAssert {
 		//For Basic Or Independent TestCases
 		sa.assertEquals(driver.getTitle(), expectedLoginPageTitle, "Login Page is not displayed");
 		
+		
 		WebElement usn = driver.findElement(By.name("username"));
 		sa.assertEquals(usn.isDisplayed(), true, "Username Textbox is not displayed");
 		usn.sendKeys("admin");

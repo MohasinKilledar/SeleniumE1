@@ -22,7 +22,7 @@ public class ToScrollTillPerticularWebElement {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(false)", targetElement);
 		Thread.sleep(2000);
-		driver.close();
+		//driver.close();
 		
 		
 
