@@ -44,5 +44,40 @@ public class MainSteps {
 	    // Write code here that turns the phrase above into concrete actions
 		System.out.println("Home page is displayed");
 	}
+	@Given ("setup the entries in database")	
+	public void setupEntries()
+	{
+		
+		System.out.println("****************************************");
+		System.out.println("setup the entries in database");
+	}
+	@When ("launch the browser from config varibale")
+	public void launchBrowser()
+	{
+		
+		System.out.println("launch the browser from config varibale");
+		
+	}
+	@When ("hit the home page url of banking site")
+	public void homePage()
+	{
+	
+		System.out.println("hit the home page url of banking site");
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

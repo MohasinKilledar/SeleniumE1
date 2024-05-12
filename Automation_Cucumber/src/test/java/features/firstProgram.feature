@@ -1,6 +1,12 @@
 Feature: Application Login
 
 
+
+Background:
+Given setup the entries in database
+When launch the browser from config varibale
+And hit the home page url of banking site
+
   @smokeTest
   Scenario: admin page default login
     Given user is landing on ActiTime Login page
@@ -28,7 +34,7 @@ Scenario Outline: Invalid login credentials
     | debit | hello@123 |
     | credit | pass@123 |
 
-
+@smokeTest @regressionTest
 Scenario: user page default signup
     Given user is on Practice landing page
     When user signup into application
