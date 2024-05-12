@@ -1,21 +1,21 @@
 Feature: Application Login
 
 
-  
+  @smokeTest
   Scenario: admin page default login
     Given user is landing on ActiTime Login page
     When user login into application with username "admin" and password "admin"
     Then Home page is displayed
    
 #Reusable
-
+@smokeTest @regressionTest
 Scenario: user page default login
     Given user is landing on ActiTime Login page
     When user login into application with username king and password kohli@12.3
     Then Home page is displayed
     
     
-   
+   @mobileTest
 Scenario Outline: Invalid login credentials
     Given user is landing on ActiTime Login page
     When user login into application with username "<Username>" and password "<Password>"
