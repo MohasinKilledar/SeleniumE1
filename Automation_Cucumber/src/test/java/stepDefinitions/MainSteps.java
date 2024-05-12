@@ -18,6 +18,11 @@ public class MainSteps {
 	    // Write code here that turns the phrase above into concrete actions
 		System.out.println("user is on Practice landing page");
 	}
+	@Given("user is landing on netBanking Login page")
+	public void user_is_landing_on_net_banking_login_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    
+	}
 	@When("user signup into application")
 	public void user_signup_into_application(List<String> data) {
 	  System.out.println(data.get(0)); 
@@ -43,6 +48,11 @@ public class MainSteps {
 	public void home_page_is_displayed() {
 	    // Write code here that turns the phrase above into concrete actions
 		System.out.println("Home page is displayed");
+	}
+	@Then("Cards are displayed")
+	public void cards_are_displayed() {
+	    // Write code here that turns the phrase above into concrete actions
+	   
 	}
 	@Given ("setup the entries in database")	
 	public void setupEntries()
